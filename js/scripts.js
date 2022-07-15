@@ -1,9 +1,11 @@
 // function with jQuery
 function newItem(){
 
-  // Adding a new item to the list:
+  // 1. Adding a new item to the list:
   let list = $('#list');
   let li = $('<li></li>');
+
+  // // Getting input values and add to list item
   let inputValue = $('#input').val();
   li.append(inputValue)
 
@@ -13,6 +15,19 @@ function newItem(){
   else {
     list.append(li)
   }
+
+  // 2. Crossing out an item from the list of items:
+  li.on("click", function() {
+    li.addClass("strike");
+  });
+
+  // 3. 3(i). Adding the delete button "X":
+
+
+  // 3(ii). Adding CLASS DELETE (DISPLAY: NONE) from the css:
+  // li.addClass("delete");
+
+  // 4. Reordering the items:
 }
 
 
