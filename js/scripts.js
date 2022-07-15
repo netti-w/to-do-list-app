@@ -17,9 +17,9 @@ function newItem(){
   }
 
   // 2. Crossing out an item from the list of items:
-  // // click event handler adding strike class to li element when clicking list item
-  li.on("click", function() {
-    li.toggleClass("strike");
+  // // double click event handler adding strike class to li element when clicking list item
+  li.on('dblclick', function() {
+    li.toggleClass('strike');
   });
 
   // 3. 3(i). Adding the delete button "X":
@@ -30,8 +30,8 @@ function newItem(){
 
   // 3(ii). Adding CLASS DELETE (DISPLAY: NONE) from the css:
   // // click event handler adding delete class to li element when clicking 'X'
-  crossOutButton.on("click", function() {
-    li.addClass("delete");
+  crossOutButton.on('click', function() {
+    li.addClass('delete');
   });
 
   // 4. Reordering the items:
