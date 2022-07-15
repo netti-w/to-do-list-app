@@ -51,6 +51,7 @@ li:hover{
 	display: none;
 }
 
+/* element > element selector is used to select elements with a specific parent */
 li > crossOutButton {
 	background: none;
 	border: none;
