@@ -19,7 +19,7 @@ function newItem(){
   // 2. Crossing out an item from the list of items:
   // // click event handler adding strike class to li element when clicking list item
   li.on("click", function() {
-    li.addClass("strike");
+    li.toggleClass("strike");
   });
 
   // 3. 3(i). Adding the delete button "X":
