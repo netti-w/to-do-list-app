@@ -10,7 +10,7 @@ function newItem(){
   li.append(inputValue)
 
   if (inputValue === '') {
-    console.log('Please write something.')
+    alert('Please write something.')
   }
   else {
     list.append(li)
